@@ -62,3 +62,11 @@ function createBudgetTracker() {
 //Test Case
 let budget = createBudgetTracker()
 console.log(budget(300))
+
+//Task 8
+function calculateGrowth(years, revenue) {
+    if (years === 10) return revenue
+    else if (years <= 10) return calculateGrowth(years + 1, revenue * 1.05)
+}
+//Test Case
+console.log(`Projected Revenue: $${calculateGrowth(8,1000)}`)
