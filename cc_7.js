@@ -13,3 +13,14 @@ function calculateHourlyWage(salary, hoursPerWeek) {
 }
 //Test Case
 calculateHourlyWage(52000, 40)
+
+//Task 3
+const calculateLoyaltyDiscount = (amount,years) => {
+    let discountedPrice = 0;
+    if (years >= 5) discountedPrice = amount * 0.85;
+    else if (years >= 3) discountedPrice = amount * 0.9;
+    else if (years < 3) discountedPrice = amount * 0.95;
+    console.log(`Discounted Price: $${discountedPrice}`);
+}; 
+//Test Case
+calculateLoyaltyDiscount(100,6)
