@@ -24,3 +24,14 @@ const calculateLoyaltyDiscount = (amount,years) => {
 }; 
 //Test Case
 calculateLoyaltyDiscount(100,6)
+
+//Task 4
+function calculateShippingCost(weight, location, expedited = false) {
+    let shippingCost = 0
+    if (location === "USA") shippingCost = 5 + (0.5 * weight)
+        else if (location === "Canada") shippingCost = 10 + (0.7 * weight)
+    if (expedited) shippingCost += 10;
+    console.log(`Shipping Cost: $${shippingCost}`)
+};
+//Test Case
+calculateShippingCost(10, "USA", true)
