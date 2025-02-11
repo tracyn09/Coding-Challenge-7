@@ -43,3 +43,10 @@ function calculateLoanInterest(principal, rate, years) {
 }
 //Test Case
 calculateLoanInterest(1000, 0.05, 3)
+
+//Task 6
+let transactions = [500, 1200, 3000, 800, 2200] 
+function filterHighValueTransactions(transactions, filterFunction) {
+    return transactions.filter(filterFunction)
+}
+console.log(filterHighValueTransactions(transactions, amount => amount > 1000))
