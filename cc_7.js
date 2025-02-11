@@ -50,3 +50,15 @@ function filterHighValueTransactions(transactions, filterFunction) {
     return transactions.filter(filterFunction)
 }
 console.log(filterHighValueTransactions(transactions, amount => amount > 1000))
+
+//Task 7
+function createBudgetTracker() {
+    let budget = 0
+    return function(expense) {
+        budget -= expense
+        return `Current Balance: $${budget}`
+    }
+}
+//Test Case
+let budget = createBudgetTracker()
+console.log(budget(300))
