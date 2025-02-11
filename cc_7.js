@@ -35,3 +35,11 @@ function calculateShippingCost(weight, location, expedited = false) {
 };
 //Test Case
 calculateShippingCost(10, "USA", true)
+
+//Task 5
+function calculateLoanInterest(principal, rate, years) {
+    let interest = principal * rate * years
+    console.log(`Total Interst: $${interest}`)
+}
+//Test Case
+calculateLoanInterest(1000, 0.05, 3)
